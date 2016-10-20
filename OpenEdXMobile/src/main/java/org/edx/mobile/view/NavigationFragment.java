@@ -28,7 +28,7 @@ import org.edx.mobile.core.IEdxEnvironment;
 import org.edx.mobile.databinding.DrawerNavigationBinding;
 import org.edx.mobile.event.AccountDataLoadedEvent;
 import org.edx.mobile.event.ProfilePhotoUpdatedEvent;
-import org.edx.mobile.http.callback.CallTrigger;
+import org.edx.mobile.http.notifications.SnackbarErrorNotification;
 import org.edx.mobile.logger.Logger;
 import org.edx.mobile.model.api.ProfileModel;
 import org.edx.mobile.module.analytics.AnalyticsRegistry;
@@ -49,7 +49,6 @@ import java.util.Map;
 
 import de.greenrobot.event.EventBus;
 import retrofit2.Call;
-
 
 public class NavigationFragment extends BaseFragment {
 
@@ -92,9 +91,13 @@ public class NavigationFragment extends BaseFragment {
             getAccountCall.enqueue(new UserAPI.AccountDataUpdatedCallback(
                     getActivity(),
                     profile.username,
-                    CallTrigger.LOADING_UNCACHED,
                     null, // Disable global loading indicator
-                    null)); // Disable global error message overlay
+                    new SnackbarErrorNotification(
+                            /* Since this Fragment's view hasn't been
+                             * initialized yet, we'll use the Activity's content
+                             * view to give to the Snackbar.
+                             */
+                            getActivity().findViewById(android.R.id.content))));
         }
         EventBus.getDefault().register(this);
     }
@@ -236,7 +239,7 @@ public class NavigationFragment extends BaseFragment {
             if (profile.email != null) {
                 drawerNavigationBinding.emailTv.setText(profile.email);
             }
-            Map<String,CharSequence> map = new HashMap<>();
+            Map<String, CharSequence> map = new HashMap<>();
             map.put("username", profile.name);
             map.put("email", profile.email);
             drawerNavigationBinding.userInfoLayout.setContentDescription(ResourceUtil.getFormattedString(getResources(), R.string.navigation_header, map));
