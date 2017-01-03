@@ -22,6 +22,7 @@ import org.edx.mobile.R;
 import org.edx.mobile.model.api.EnrolledCoursesResponse;
 import org.edx.mobile.task.EnrollForCourseTask;
 import org.edx.mobile.task.GetEnrolledCourseTask;
+import org.edx.mobile.view.custom.EdxWebView;
 import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
 import org.edx.mobile.view.dialog.EnrollmentFailureDialogFragment;
 import org.edx.mobile.view.dialog.IDialogCallback;
@@ -40,7 +41,7 @@ public abstract class FindCoursesBaseActivity extends BaseFragmentActivity imple
     private static final String ACTION_ENROLLED = "ACTION_ENROLLED_TO_COURSE";
 
     private View offlineBar;
-    private WebView webview;
+    private EdxWebView webview;
     private boolean isWebViewLoaded;
     private ProgressBar progressWheel;
     private boolean isTaskInProgress = false;
@@ -61,11 +62,9 @@ public abstract class FindCoursesBaseActivity extends BaseFragmentActivity imple
         }
 
 
-        webview = (WebView) findViewById(R.id.webview);
+        webview = (EdxWebView) findViewById(R.id.webview);
         offlineBar = findViewById(R.id.offline_bar);
         progressWheel = (ProgressBar) findViewById(R.id.loading_indicator);
-
-        webview.getSettings().setDomStorageEnabled(true);
 
         setupWebView();
         enableEnrollCallback();
