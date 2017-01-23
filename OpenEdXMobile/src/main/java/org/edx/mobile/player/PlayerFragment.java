@@ -40,6 +40,7 @@ import com.google.inject.Inject;
 
 import org.edx.mobile.R;
 import org.edx.mobile.base.BaseFragment;
+import org.edx.mobile.base.MainApplication;
 import org.edx.mobile.core.IEdxEnvironment;
 import org.edx.mobile.interfaces.NetworkObserver;
 import org.edx.mobile.logger.Logger;
@@ -48,6 +49,7 @@ import org.edx.mobile.model.api.TranscriptModel;
 import org.edx.mobile.model.db.DownloadEntry;
 import org.edx.mobile.module.facebook.IUiLifecycleHelper;
 import org.edx.mobile.module.prefs.LoginPrefs;
+import org.edx.mobile.module.prefs.PrefManager;
 import org.edx.mobile.util.AppConstants;
 import org.edx.mobile.util.BrowserUtil;
 import org.edx.mobile.util.DeviceSettingUtil;
@@ -852,12 +854,17 @@ public class PlayerFragment extends BaseFragment implements IPlayerListener, Ser
                     player.getController().showSpecial( (getTouchExploreEnabled() ? 0L : 5000L) );
                 }
             }
-        }catch(Exception e){
+        } catch(Exception e) {
             logger.error(e);
         }
         try {
             if (NetworkUtil.isConnected(getContext())) {
-                showRatingDialog();
+                PrefManager.UserPrefManager prefs = new PrefManager.UserPrefManager(MainApplication.application);
+                long rating = prefs.getUserRating();
+                // If user has not given rating yet, ask for rating
+                if (rating <= 0) {
+                    showRatingDialog();
+                }
             }
         } catch (Exception e) {
             logger.error(e);

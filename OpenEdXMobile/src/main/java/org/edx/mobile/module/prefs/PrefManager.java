@@ -205,6 +205,14 @@ public class PrefManager {
         public void setIsVideosCacheRestored(boolean restored) {
             super.put(Key.VIDEOS_CACHE_RESTORED, restored);
         }
+
+        public long getUserRating() {
+            return getLong(Key.USER_RATING);
+        }
+
+        public void setUserRating(long userRating) {
+            super.put(Key.USER_RATING, userRating);
+        }
     }
 
     /**
@@ -253,7 +261,7 @@ public class PrefManager {
          * flag which marks whether the cache has been restored
          */
         public static final String VIDEOS_CACHE_RESTORED = "VideosCacheRestored";
-
+        public static final String USER_RATING = "UserRating";
 
     }
 

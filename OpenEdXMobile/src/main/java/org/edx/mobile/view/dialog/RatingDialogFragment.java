@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.RatingBar;
 
 import org.edx.mobile.R;
+import org.edx.mobile.base.MainApplication;
+import org.edx.mobile.module.prefs.PrefManager;
 
 import roboguice.fragment.RoboDialogFragment;
 
@@ -37,7 +39,10 @@ public class RatingDialogFragment extends RoboDialogFragment implements RatingBa
 
     @Override
     public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-        // Selected rating is in rating param
-        // TODO: Persist the user ratings, current time and app version, probably need to save on server as well
+        // Persist rating
+        PrefManager.UserPrefManager prefs = new PrefManager.UserPrefManager(MainApplication.application);
+        prefs.setUserRating((long) rating);
+        // Close dialog
+        this.dismiss();
     }
 }
