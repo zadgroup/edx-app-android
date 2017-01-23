@@ -58,6 +58,7 @@ import org.edx.mobile.util.UiUtil;
 import org.edx.mobile.view.adapters.ClosedCaptionAdapter;
 import org.edx.mobile.view.dialog.CCLanguageDialogFragment;
 import org.edx.mobile.view.dialog.IListDialogCallback;
+import org.edx.mobile.view.dialog.RatingDialogFragment;
 
 import java.io.InputStream;
 import java.io.Serializable;
@@ -854,6 +855,17 @@ public class PlayerFragment extends BaseFragment implements IPlayerListener, Ser
         }catch(Exception e){
             logger.error(e);
         }
+        try {
+            if (NetworkUtil.isConnected(getContext())) {
+                showRatingDialog();
+            }
+        } catch (Exception e) {
+            logger.error(e);
+        }
+    }
+
+    public void showRatingDialog() {
+        RatingDialogFragment.newInstance().show(getFragmentManager(), null);
     }
 
     @Override
