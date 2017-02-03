@@ -857,16 +857,12 @@ public class PlayerFragment extends BaseFragment implements IPlayerListener, Ser
         } catch(Exception e) {
             logger.error(e);
         }
-        try {
-            if (NetworkUtil.isConnected(getContext())) {
-                PrefManager.UserPrefManager userPrefs = new PrefManager.UserPrefManager(MainApplication.application);
-                // If user has not given rating yet, ask for rating
-                if (userPrefs.getAppRating() < 0.0f) {
-                    showRatingDialog();
-                }
+        if (NetworkUtil.isConnected(getContext())) {
+            PrefManager.UserPrefManager userPrefs = new PrefManager.UserPrefManager(MainApplication.application);
+            // If user has not given rating yet, ask for rating
+            if (userPrefs.getAppRating() < 0.0f) {
+                showRatingDialog();
             }
-        } catch (Exception e) {
-            logger.error(e);
         }
     }
 
