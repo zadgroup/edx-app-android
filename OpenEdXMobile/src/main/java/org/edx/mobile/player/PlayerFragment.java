@@ -859,10 +859,9 @@ public class PlayerFragment extends BaseFragment implements IPlayerListener, Ser
         }
         try {
             if (NetworkUtil.isConnected(getContext())) {
-                PrefManager.UserPrefManager prefs = new PrefManager.UserPrefManager(MainApplication.application);
-                long rating = prefs.getUserRating();
+                PrefManager.UserPrefManager userPrefs = new PrefManager.UserPrefManager(MainApplication.application);
                 // If user has not given rating yet, ask for rating
-                if (rating <= 0) {
+                if (userPrefs.getAppRating() < 0.0f) {
                     showRatingDialog();
                 }
             }

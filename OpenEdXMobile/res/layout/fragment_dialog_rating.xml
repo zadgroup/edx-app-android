@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:gravity="center"
     android:layout_gravity="center"
     android:orientation="vertical"
-    android:background="@color/white"
-    android:padding="40dp"
-    android:layout_margin="10dp">
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="24dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_description"
+        style="@style/regular_grey_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:text="@string/rating_dialog_description"/>
+        android:gravity="center_horizontal"
+        android:text="@string/rating_dialog_description"
+        android:textSize="18sp" />
 
-    <RatingBar
+    <org.edx.mobile.view.custom.EdxRatingBar
+        android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        style="@style/edX.Widget.RatingBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
         android:numStars="5"
-        android:stepSize="1.0"
-        android:layout_marginTop="40dp"/>
+        android:stepSize="1.0" />
+
 </LinearLayout>

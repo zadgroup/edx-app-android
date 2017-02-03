@@ -206,12 +206,20 @@ public class PrefManager {
             super.put(Key.VIDEOS_CACHE_RESTORED, restored);
         }
 
-        public long getUserRating() {
-            return getLong(Key.USER_RATING);
+        public float getAppRating() {
+            return getFloat(Key.APP_RATING);
         }
 
-        public void setUserRating(long userRating) {
-            super.put(Key.USER_RATING, userRating);
+        public void setAppRating(float appRating) {
+            super.put(Key.APP_RATING, appRating);
+        }
+
+        public String getVersionWhenLastRated() {
+            return getString(Key.VERSION_WHEN_LAST_RATED);
+        }
+
+        public void setVersionWhenLastRated(String versionName) {
+            super.put(Key.VERSION_WHEN_LAST_RATED, versionName);
         }
     }
 
@@ -261,8 +269,8 @@ public class PrefManager {
          * flag which marks whether the cache has been restored
          */
         public static final String VIDEOS_CACHE_RESTORED = "VideosCacheRestored";
-        public static final String USER_RATING = "UserRating";
-
+        public static final String APP_RATING = "APP_RATING";
+        public static final String VERSION_WHEN_LAST_RATED = "VERSION_WHEN_LAST_RATED";
     }
 
     public static final class Value {

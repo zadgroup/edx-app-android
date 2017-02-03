@@ -1,48 +1,47 @@
 package org.edx.mobile.view.dialog;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.v7.app.AlertDialog;
 import android.widget.RatingBar;
 
+import org.edx.mobile.BuildConfig;
 import org.edx.mobile.R;
 import org.edx.mobile.base.MainApplication;
 import org.edx.mobile.module.prefs.PrefManager;
 
 import roboguice.fragment.RoboDialogFragment;
 
-public class RatingDialogFragment extends RoboDialogFragment implements RatingBar.OnRatingBarChangeListener{
+public class RatingDialogFragment extends RoboDialogFragment {
     public static RatingDialogFragment newInstance() {
-        RatingDialogFragment frag = new RatingDialogFragment();
-        return frag;
+        return new RatingDialogFragment();
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setCancelable(true);
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        final AlertDialog alertDialog = new AlertDialog.Builder(getContext())
+                .setPositiveButton(getString(R.string.submit), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int id) {
+                        submit();
+                    }
+                })
+                .setNegativeButton(android.R.string.cancel, null)
+                .setView(R.layout.fragment_dialog_rating)
+                .setCancelable(true)
+                .create();
+        return alertDialog;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dialog_rating, container, false);
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        RatingBar ratingBar = (RatingBar) view.findViewById(R.id.ratingBar);
-        ratingBar.setOnRatingBarChangeListener(this);
-    }
-
-    @Override
-    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-        // Persist rating
-        PrefManager.UserPrefManager prefs = new PrefManager.UserPrefManager(MainApplication.application);
-        prefs.setUserRating((long) rating);
+    public void submit() {
+        final Dialog dialog = getDialog();
+        final RatingBar ratingBar = (RatingBar) dialog.findViewById(R.id.ratingBar);
+        // Persist rating and current version name
+        PrefManager.UserPrefManager userPrefs = new PrefManager.UserPrefManager(MainApplication.application);
+        userPrefs.setAppRating(ratingBar.getRating());
+        userPrefs.setVersionWhenLastRated(BuildConfig.VERSION_NAME);
         // Close dialog
-        this.dismiss();
+        dialog.dismiss();
     }
 }
