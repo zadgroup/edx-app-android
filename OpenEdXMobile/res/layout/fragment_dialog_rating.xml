@@ -5,9 +5,9 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:orientation="vertical"
-    android:paddingLeft="24dp"
-    android:paddingRight="24dp"
-    android:paddingTop="24dp">
+    android:paddingLeft="@dimen/dialog_padding_material"
+    android:paddingRight="@dimen/dialog_padding_material"
+    android:paddingTop="@dimen/dialog_padding_top_material">
 
     <TextView
         android:id="@+id/tv_description"
@@ -16,14 +16,14 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/rating_dialog_description"
-        android:textSize="18sp" />
+        android:textSize="@dimen/edx_large" />
 
     <org.edx.mobile.view.custom.EdxRatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/dialog_padding_material"
         android:numStars="5"
         android:stepSize="1.0" />
 

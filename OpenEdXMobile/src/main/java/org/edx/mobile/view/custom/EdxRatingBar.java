@@ -11,7 +11,7 @@ import android.widget.RatingBar;
 import org.edx.mobile.R;
 
 public class EdxRatingBar extends RatingBar {
-    private final int UN_SELECTED_STAR_COLOR = getResources().getColor(R.color.edx_brand_gray_back);
+    private final int UNSELECTED_STAR_COLOR = getResources().getColor(R.color.edx_brand_gray_back);
     private final int SELECTED_STAR_COLOR = getResources().getColor(R.color.edx_brand_primary_base);
     private final int SELECTED_STAR_COLOR_DARK = getResources().getColor(R.color.edx_brand_primary_dark);
 
@@ -40,7 +40,7 @@ public class EdxRatingBar extends RatingBar {
 
     public void customizeTheme() {
         LayerDrawable stars = (LayerDrawable) this.getProgressDrawable();
-        stars.getDrawable(0).setColorFilter(UN_SELECTED_STAR_COLOR, PorterDuff.Mode.SRC_ATOP);
+        stars.getDrawable(0).setColorFilter(UNSELECTED_STAR_COLOR, PorterDuff.Mode.SRC_ATOP);
         stars.getDrawable(1).setColorFilter(SELECTED_STAR_COLOR_DARK, PorterDuff.Mode.SRC_ATOP);
         stars.getDrawable(2).setColorFilter(SELECTED_STAR_COLOR, PorterDuff.Mode.SRC_ATOP);
     }
