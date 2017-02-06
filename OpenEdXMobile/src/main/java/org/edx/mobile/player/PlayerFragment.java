@@ -38,6 +38,7 @@ import android.widget.TextView;
 import com.facebook.widget.FacebookDialog;
 import com.google.inject.Inject;
 
+import org.edx.mobile.BuildConfig;
 import org.edx.mobile.R;
 import org.edx.mobile.base.BaseFragment;
 import org.edx.mobile.base.MainApplication;
@@ -57,6 +58,7 @@ import org.edx.mobile.util.ListUtil;
 import org.edx.mobile.util.NetworkUtil;
 import org.edx.mobile.util.OrientationDetector;
 import org.edx.mobile.util.UiUtil;
+import org.edx.mobile.util.Version;
 import org.edx.mobile.view.adapters.ClosedCaptionAdapter;
 import org.edx.mobile.view.dialog.CCLanguageDialogFragment;
 import org.edx.mobile.view.dialog.IListDialogCallback;
@@ -64,6 +66,7 @@ import org.edx.mobile.view.dialog.RatingDialogFragment;
 
 import java.io.InputStream;
 import java.io.Serializable;
+import java.text.ParseException;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.util.HashMap;
@@ -859,9 +862,24 @@ public class PlayerFragment extends BaseFragment implements IPlayerListener, Ser
         }
         if (NetworkUtil.isConnected(getContext())) {
             PrefManager.UserPrefManager userPrefs = new PrefManager.UserPrefManager(MainApplication.application);
+            final float appRating = userPrefs.getAppRating();
             // If user has not given rating yet, ask for rating
-            if (userPrefs.getAppRating() < 0.0f) {
+            if (appRating < 0.0f) {
                 showRatingDialog();
+            } else if (appRating <= 3.0f) {
+                // If user rated <=3
+                try {
+                    Version oldVersion = new Version(userPrefs.getVersionWhenLastRated());
+                    Version curVersion = new Version(BuildConfig.VERSION_NAME);
+                    if (oldVersion.isNMinorVersionsDiff(curVersion, 2)) {
+                        // App updated to 2 minor versions
+                        showRatingDialog();
+                    }
+                } catch (ParseException e) {
+                    /** build version number doesn't correspond to the schema, its a build
+                     configuration error **/
+                    logger.error(e, true);
+                }
             }
         }
     }
