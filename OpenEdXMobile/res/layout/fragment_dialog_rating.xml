@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="@string/rating_dialog_description"
+        android:text="@string/rating_dialog_message"
         android:textSize="@dimen/edx_large" />
 
     <org.edx.mobile.view.custom.EdxRatingBar

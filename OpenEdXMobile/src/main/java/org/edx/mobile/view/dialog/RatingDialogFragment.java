@@ -21,7 +21,7 @@ public class RatingDialogFragment extends RoboDialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final AlertDialog alertDialog = new AlertDialog.Builder(getContext())
-                .setPositiveButton(getString(R.string.submit), new DialogInterface.OnClickListener() {
+                .setPositiveButton(getString(R.string.label_submit), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int id) {
                         submit();
