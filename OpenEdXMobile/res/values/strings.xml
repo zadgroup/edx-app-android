@@ -605,5 +605,8 @@
     <!-- Text that pre-populates your post/email/SMS when sharing certificate -->
     <string name="share_accomplishment_message">I just earned a badge on {platform_name}! Check it out: {badge_url}</string>
     <string name="rating_dialog_message">How would you rate the edX app?</string>
-
+    <string name="rate_app_dialog_title">Rate the app</string>
+    <string name="rate_app_dialog_message">Tell others what you think of the edx app by writing a quick review in the app store</string>
+    <string name="feedback_dialog_title">Send Feedback?</string>
+    <string name="feedback_dialog_message">Help us improve!</string>
 </resources>

@@ -3,15 +3,20 @@ package org.edx.mobile.view;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.TaskStackBuilder;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
+import org.edx.mobile.BuildConfig;
+import org.edx.mobile.R;
 import org.edx.mobile.authentication.LoginAPI;
 import org.edx.mobile.course.CourseDetail;
 import org.edx.mobile.discussion.DiscussionComment;
@@ -24,6 +29,7 @@ import org.edx.mobile.module.notification.NotificationDelegate;
 import org.edx.mobile.module.prefs.LoginPrefs;
 import org.edx.mobile.profiles.UserProfileActivity;
 import org.edx.mobile.util.Config;
+import org.edx.mobile.util.EmailUtil;
 import org.edx.mobile.util.SecurityUtil;
 import org.edx.mobile.view.dialog.WebViewActivity;
 import org.edx.mobile.view.my_videos.MyVideosActivity;
@@ -360,5 +366,31 @@ public class Router {
 
     public void showWebViewActivity(@NonNull Activity activity, @NonNull String url, @Nullable String title) {
         activity.startActivity(WebViewActivity.newIntent(activity, url, title));
+    }
+
+    public void showFeedbackScreen(FragmentActivity activity) {
+        String to = config.getFeedbackEmailAddress();
+        String subject = activity.getString(R.string.email_subject);
+
+        String osVersionText = String.format("%s %s", activity.getString(R.string.android_os_version),
+                android.os.Build.VERSION.RELEASE);
+        String appVersionText = String.format("%s %s", activity.getString(R.string.app_version),
+                BuildConfig.VERSION_NAME);
+        String deviceModelText = String.format("%s %s", activity.getString(R.string.android_device_model),
+                Build.MODEL);
+        String feedbackText = activity.getString(R.string.insert_feedback);
+        String body = osVersionText + "\n" + appVersionText + "\n" + deviceModelText + "\n\n" + feedbackText;
+        EmailUtil.openEmailClient(activity, to, subject, body, config);
+    }
+
+    public void openAppPageInPlayStore(@NonNull Context context) {
+        String packageName = context.getPackageName();
+        try {
+            context.startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" + packageName)));
+        } catch (android.content.ActivityNotFoundException anfe) {
+            context.startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://play.google.com/store/apps/details?id=" + packageName)));
+        }
     }
 }
