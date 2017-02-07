@@ -368,9 +368,8 @@ public class Router {
         activity.startActivity(WebViewActivity.newIntent(activity, url, title));
     }
 
-    public void showFeedbackScreen(FragmentActivity activity) {
+    public void showFeedbackScreen(FragmentActivity activity, String subject) {
         String to = config.getFeedbackEmailAddress();
-        String subject = activity.getString(R.string.email_subject);
 
         String osVersionText = String.format("%s %s", activity.getString(R.string.android_os_version),
                 android.os.Build.VERSION.RELEASE);

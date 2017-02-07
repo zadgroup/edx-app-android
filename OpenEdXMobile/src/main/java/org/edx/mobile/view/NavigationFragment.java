@@ -214,7 +214,7 @@ public class NavigationFragment extends BaseFragment {
         drawerNavigationBinding.drawerOptionSubmitFeedback.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                environment.getRouter().showFeedbackScreen(getActivity());
+                environment.getRouter().showFeedbackScreen(getActivity(), getString(R.string.email_subject));
             }
         });
 

@@ -66,7 +66,7 @@ public class RatingDialogFragment extends RoboDialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // Submit feedback
-                mRouter.showFeedbackScreen(activity);
+                mRouter.showFeedbackScreen(activity, activity.getString(R.string.review_email_subject));
             }
         });
         builder.setNegativeButton(R.string.label_maybe_later, null);
