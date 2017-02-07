@@ -1,10 +1,14 @@
 package org.edx.mobile.view.dialog;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AlertDialog;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RatingBar;
 
 import com.google.inject.Inject;
@@ -17,9 +21,12 @@ import org.edx.mobile.view.Router;
 
 import roboguice.fragment.RoboDialogFragment;
 
-public class RatingDialogFragment extends RoboDialogFragment {
+public class RatingDialogFragment extends RoboDialogFragment implements AlertDialog.OnShowListener,
+        RatingBar.OnRatingBarChangeListener {
     @Inject
     private Router mRouter;
+    private AlertDialog mAlertDialog;
+    private RatingBar mRatingBar;
 
     public static RatingDialogFragment newInstance() {
         return new RatingDialogFragment();
@@ -27,7 +34,11 @@ public class RatingDialogFragment extends RoboDialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final AlertDialog alertDialog = new AlertDialog.Builder(getContext())
+        final LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        final View view = inflater.inflate(R.layout.fragment_dialog_rating, null);
+        mRatingBar = (RatingBar) view.findViewById(R.id.ratingBar);
+        mRatingBar.setOnRatingBarChangeListener(this);
+        mAlertDialog = new AlertDialog.Builder(getContext())
                 .setPositiveButton(getString(R.string.label_submit), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int id) {
@@ -35,10 +46,18 @@ public class RatingDialogFragment extends RoboDialogFragment {
                     }
                 })
                 .setNegativeButton(android.R.string.cancel, null)
-                .setView(R.layout.fragment_dialog_rating)
+                .setView(view)
                 .setCancelable(true)
                 .create();
-        return alertDialog;
+        mAlertDialog.setOnShowListener(this);
+        return mAlertDialog;
+    }
+
+    @Override
+    public void onShow(DialogInterface dialog) {
+        if (mRatingBar.getRating() <= 0.0f) {
+            mAlertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
+        }
     }
 
     public void submit() {
@@ -86,5 +105,15 @@ public class RatingDialogFragment extends RoboDialogFragment {
         });
         builder.setNegativeButton(R.string.label_maybe_later, null);
         builder.create().show();
+    }
+
+    @Override
+    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+        final Button positiveButton = mAlertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+        if (rating > 0.0f) {
+            positiveButton.setEnabled(true);
+        } else {
+            positiveButton.setEnabled(false);
+        }
     }
 }
