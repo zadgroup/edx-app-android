@@ -148,4 +148,35 @@ public class VersionTest {
     public void testCompareTo_withMorePreciseLaterVersion_isLessThan() throws ParseException {
         assertThat(new Version("1")).isLessThan(new Version("1.0.1"));
     }
+
+    /**
+     * Verify that the {@link Version#isNMinorVersionsDiff(Version, int)} method returns true
+     * if passed another instance with greater or equal minor versions difference than the specified
+     * value.
+     */
+    @Test
+    public void testIsNMinorVersionsDiff_withGreaterOrEqualDiff_isTrue() throws ParseException {
+        final Version version = new Version("2.2.9");
+        assertThat(version.isNMinorVersionsDiff(new Version("2.0.1"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("2.4.9"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("2.4.1"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("2.8.0"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("3.2.9"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("3.0"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("2"), 2)).isEqualTo(true);
+        assertThat(version.isNMinorVersionsDiff(new Version("4"), 2)).isEqualTo(true);
+    }
+
+    /**
+     * Verify that the {@link Version#isNMinorVersionsDiff(Version, int)} method returns false
+     * if passed another instance with less minor versions difference than the specified value.
+     */
+    @Test
+    public void testIsNMinorVersionsDiff_withLessDiff_isFalse() throws ParseException {
+        final Version version = new Version("2.2.5");
+        assertThat(version.isNMinorVersionsDiff(new Version("2.2.5"), 2)).isEqualTo(false);
+        assertThat(version.isNMinorVersionsDiff(new Version("2.3.5"), 2)).isEqualTo(false);
+        assertThat(version.isNMinorVersionsDiff(new Version("2.3.9"), 2)).isEqualTo(false);
+        assertThat(version.isNMinorVersionsDiff(new Version("2.2"), 2)).isEqualTo(false);
+    }
 }
