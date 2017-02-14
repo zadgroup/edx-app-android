@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Divider between current time and total time. For example  "2:33/5:10"-->
+  <string name="lbl_slash">/</string>
+  <!--Name of mode when user has no internet connection causing some features to be unavailable-->
+  <string name="lbl_offline_mode">Режим оффлайн</string>
+  <!--Label describing the meaning of offline mode-->
+  <string name="lbl_offline_mode_desc">В режиме оффлайн Вы можете просматривать только сохраненные на Вашем устройстве видео.</string>
+  <!--Button allowing user to open a web page corresponding to the current screen in a web browser-->
+  <string name="lbl_view_on_web">Открыть в браузере</string>
+  <!--Label indicating that the only course content visible in the app is videos-->
+  <string name="lbl_showing_only_videos">Показывать только видео</string>
+  <!--Dialog Fragment Labels-->
+  <!--Alert dialog cancel button-->
+  <string name="label_cancel">Отмена</string>
+  <!--Alert dialog No button-->
+  <string name="label_no">Нет</string>
+  <!--Alert dialog download button-->
+  <string name="label_download">Скачать</string>
+  <!--Alert dialog yes confirmation button-->
+  <string name="label_yes">Да</string>
+  <!--Alert dialog delete confirmation button-->
+  <string name="label_delete">Удалить</string>
+  <!--Alert dialog edit list confirmation button-->
+  <string name="label_edit">Редактировать</string>
+  <!--Alert dialog okay button-->
+  <string name="label_ok">ОК</string>
+  <!--Alert dialog close button-->
+  <string name="label_close">Закрыть</string>
+  <!--Alert dialog continue confirmation button-->
+  <string name="label_continue">Продолжить</string>
+</resources>

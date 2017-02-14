@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Divider between current time and total time. For example  "2:33/5:10"-->
+  <string name="lbl_slash">/</string>
+  <!--Name of mode when user has no internet connection causing some features to be unavailable-->
+  <string name="lbl_offline_mode">מצב לא מקוון</string>
+  <!--Label describing the meaning of offline mode-->
+  <string name="lbl_offline_mode_desc">במצב לא מקוון, ניתן לצפות רק בסרטונים ששמורים במכשיר.</string>
+  <!--Button allowing user to open a web page corresponding to the current screen in a web browser-->
+  <string name="lbl_view_on_web">צפה בגרסת ווב</string>
+  <!--Label indicating that the only course content visible in the app is videos-->
+  <string name="lbl_showing_only_videos">הצג רק סרטונים</string>
+  <!--Dialog Fragment Labels-->
+  <!--Alert dialog cancel button-->
+  <string name="label_cancel">בטל</string>
+  <!--Alert dialog No button-->
+  <string name="label_no">לא</string>
+  <!--Alert dialog download button-->
+  <string name="label_download">הורד</string>
+  <!--Alert dialog yes confirmation button-->
+  <string name="label_yes">כן</string>
+  <!--Alert dialog delete confirmation button-->
+  <string name="label_delete">מחק</string>
+  <!--Alert dialog edit list confirmation button-->
+  <string name="label_edit">ערוך</string>
+  <!--Alert dialog okay button-->
+  <string name="label_ok">OK</string>
+  <!--Alert dialog close button-->
+  <string name="label_close">סגור</string>
+  <!--Alert dialog continue confirmation button-->
+  <string name="label_continue">המשך</string>
+</resources>

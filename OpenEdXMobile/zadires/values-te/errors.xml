@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--An error occurred but we don't know why-->
+  <string name="error_unknown">గుర్తించలేని పొరపాటు. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+  <!--Network error messages-->
+  <!--Error shown when  user attempts an action but needs an internet connection-->
+  <string name="network_not_connected">మీరు ఇంటర్నెట్ కు కనెక్ట్ కాలేదు.</string>
+  <!--Concise error shown when user attempts an action but needs an internet connection-->
+  <string name="network_not_connected_short">నెట్వర్క్ అందుబాటులో లేదు</string>
+  <!--Alert dialog title shown when a network request fails-->
+  <string name="reset_no_network_title">కనెక్షన్ లోపం</string>
+  <!--Alert dialog content shown when a network request fails because the user has no internet connection-->
+  <string name="reset_no_network_message">మీరు ఇంటర్నెట్ కు కనెక్ట్ కాలేదు. మీ ఇంటర్నెట్ కనెక్షన్ను తనిఖీ చెయ్యండి.</string>
+  <!--An error ocurred due to some kind of network failure-->
+  <string name="network_connected_error">కనెక్షన్ లోపం. మీ ఇంటర్నెట్ కనెక్షన్ను తనిఖీ చెయ్యండి.</string>
+  <!--Title of prompt indicating issue loading a video-->
+  <string name="network_error_header">problem loading video</string>
+  <!--Content of prompt indicating issue loading a video-->
+  <string name="network_error_message">miru internet ki connect avvaledu. dayachesi internet connection sari chusukondi</string>
+  <!--The server we are trying to use is not available right now-->
+  <string name="network_service_unavailable">సేవ అందుబాటులో లేదు . దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+  <!--Login error messages-->
+  <!--Error shown during login when user attempts login without entering a username or e-mail-->
+  <string name="error_enter_email">మీ వినియోగదారు పేరు లేదా ఇ- మెయిల్ నమోదు చేసి , మళ్ళీ ప్రయత్నించండి</string>
+  <!--Error shown during login when user enters an invalid email address-->
+  <string name="error_invalid_email">dayachesi mi e-mail address ni sarichusukondi mariyu tirigi prayatnichandi</string>
+  <!--Error shown during login when user attempts login without entering a password-->
+  <string name="error_enter_password">dayachesi mi password enter chesi tirigi prayatninchandi</string>
+  <!--Title of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <!--Content of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <!--Title of alert shown during login when user attempts login via Google without having linked their account-->
+  <!--Content of alert shown during login when user attempts login via Google without having linked their account-->
+  <!--Download error messages-->
+  <!--Label shown on video list item whose download failed-->
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <string name="file_size_exceeded">download parimiti mi remaining device storage parimitini minchinadi</string>
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <!--Message shown when user attempts to download a video over cellular data,
+    but has chosen to only allow video downloads over wifi-->
+  <string name="wifi_off_message">prastuta mi settings wifi connection pai maatrame anumatinchabadinadi. 
+dayachesi wifi network ku connect avvandi leda mi download settings ni sarichusukondi</string>
+  <!--Offline Access-->
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <string name="section_offline_header">e section offline mode nandu andubaatulo ledu</string>
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <!--Alert dialog title shown when user attempts to view a video that hasn't been synced-->
+  <string name="video_offline_header">e section offline mode nandu andubaatulo ledu</string>
+  <!--Alert dialog content shown when user attempts to view a video that hasn't been synced-->
+  <!--New version available-->
+  <!--Snackbar notification shown when the current version of the app is unsupported-->
+  <!--Snackbar notification shown when the current version of the app is deprecated-->
+  <!--Snackbar notification shown when the current version of the app is outdated-->
+  <!--Snackbar action button label for opening an app store to upgrade the app to the latest version-->
+  <!--Toast notification for when the user presses the update action button from the Snackbar
+         notifications while no supported app store or browser is installed on the device with which
+         the app could be updated-->
+  <!--Registration Error Messages-->
+  <!--Error prompt shown during registration to indicate an empty field. Argument is a field name-->
+  <string name="error_enter_field">dayachesi mi  %1$s ni enter cheyandi</string>
+  <!--Error prompt shown during registration to indicate a field missing a selection. Argument is a field name-->
+  <string name="error_select_field">dayachesi mi %1$s ni select cheyandi</string>
+  <!--Error prompt shown during registration when a field entry is too short. Arguments are 1) a field name, 2) a number-->
+  <string name="error_min_length">%1$s kachitamga kanisam %2$d characters kaligi undaali</string>
+  <!--Error prompt shown during registration when a field entry is too long. Arguments are 1) a field name, 2) a number-->
+  <string name="error_max_length">%1$s kachitamga kanisam %2$d characters kaligi undaali</string>
+  <!--Error message shown when a course hasn't started yet-->
+  <string name="course_not_started">ఈ కోర్సు ఇంకా ప్రారంభం కాలేదు .</string>
+  <!--Error message shown when a user can't perform an action on e.g. add a post/response/comment in forums-->
+</resources>

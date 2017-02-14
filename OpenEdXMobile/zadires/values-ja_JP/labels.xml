@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Divider between current time and total time. For example  "2:33/5:10"-->
+  <string name="lbl_slash">/</string>
+  <!--Name of mode when user has no internet connection causing some features to be unavailable-->
+  <string name="lbl_offline_mode">オフラインモード</string>
+  <!--Label describing the meaning of offline mode-->
+  <string name="lbl_offline_mode_desc">オフラインモードでは、端末に保存しているビデオだけが利用できます。</string>
+  <!--Button allowing user to open a web page corresponding to the current screen in a web browser-->
+  <string name="lbl_view_on_web">ウェブで見る</string>
+  <!--Label indicating that the only course content visible in the app is videos-->
+  <string name="lbl_showing_only_videos">ビデオのみの利用</string>
+  <!--Dialog Fragment Labels-->
+  <!--Alert dialog cancel button-->
+  <string name="label_cancel">取り消し</string>
+  <!--Alert dialog No button-->
+  <string name="label_no">いいえ</string>
+  <!--Alert dialog download button-->
+  <string name="label_download">ダウンロード</string>
+  <!--Alert dialog yes confirmation button-->
+  <string name="label_yes">はい</string>
+  <!--Alert dialog delete confirmation button-->
+  <string name="label_delete">削除</string>
+  <!--Alert dialog edit list confirmation button-->
+  <string name="label_edit">編集</string>
+  <!--Alert dialog okay button-->
+  <string name="label_ok">OK</string>
+  <!--Alert dialog close button-->
+  <string name="label_close">閉じる</string>
+  <!--Alert dialog continue confirmation button-->
+  <string name="label_continue">続ける</string>
+</resources>

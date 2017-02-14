@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--An error occurred but we don't know why-->
+  <!--Network error messages-->
+  <!--Error shown when  user attempts an action but needs an internet connection-->
+  <string name="network_not_connected">Du er ikke koblet til internett.</string>
+  <!--Concise error shown when user attempts an action but needs an internet connection-->
+  <string name="network_not_connected_short">Kan ikke nå nettverket</string>
+  <!--Alert dialog title shown when a network request fails-->
+  <string name="reset_no_network_title">Tilkoblingsfeil</string>
+  <!--Alert dialog content shown when a network request fails because the user has no internet connection-->
+  <string name="reset_no_network_message">Du er ikke koblet til internett. Vennligst sjekk din internettilkobling</string>
+  <!--An error ocurred due to some kind of network failure-->
+  <!--Title of prompt indicating issue loading a video-->
+  <string name="network_error_header">Problemer ved lasting av video</string>
+  <!--Content of prompt indicating issue loading a video-->
+  <string name="network_error_message">Vennligst sjekk din internettilkobling.</string>
+  <!--The server we are trying to use is not available right now-->
+  <!--Login error messages-->
+  <!--Error shown during login when user attempts login without entering a username or e-mail-->
+  <string name="error_enter_email">Vær vennlig å legg til ditt brukernavn eller e-postadresse og forsøk igjen.</string>
+  <!--Error shown during login when user enters an invalid email address-->
+  <string name="error_invalid_email">Vær vennlig å sjekke at din e-postadresse er formatert korrekt og forsøk igjen.</string>
+  <!--Error shown during login when user attempts login without entering a password-->
+  <string name="error_enter_password">Vær vennlig å skriv inn ditt passord og forsøk igjen.</string>
+  <!--Title of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <!--Content of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <!--Title of alert shown during login when user attempts login via Google without having linked their account-->
+  <!--Content of alert shown during login when user attempts login via Google without having linked their account-->
+  <!--Download error messages-->
+  <!--Label shown on video list item whose download failed-->
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <string name="file_size_exceeded">Størrelsen på nedlastingen overstiger tilgjengelig lagringskapasitet på enheten.</string>
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <!--Message shown when user attempts to download a video over cellular data,
+    but has chosen to only allow video downloads over wifi-->
+  <string name="wifi_off_message">Dine nåværende nedlastingsinnstillinger tillater kun nedlasting over Wi-Fi. 
+        \n Vennligst koble deg til et Wi-Fi nettverk eller endre dine nedlastingsinnstilinger.</string>
+  <!--Offline Access-->
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <string name="section_offline_header">Denne seksjonen er ikke tilgjengelig i offline-modus</string>
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <!--Alert dialog title shown when user attempts to view a video that hasn't been synced-->
+  <string name="video_offline_header">Denne videoen er ikke tilgjengelig offline.</string>
+  <!--Alert dialog content shown when user attempts to view a video that hasn't been synced-->
+  <!--New version available-->
+  <!--Snackbar notification shown when the current version of the app is unsupported-->
+  <!--Snackbar notification shown when the current version of the app is deprecated-->
+  <!--Snackbar notification shown when the current version of the app is outdated-->
+  <!--Snackbar action button label for opening an app store to upgrade the app to the latest version-->
+  <!--Toast notification for when the user presses the update action button from the Snackbar
+         notifications while no supported app store or browser is installed on the device with which
+         the app could be updated-->
+  <!--Registration Error Messages-->
+  <!--Error prompt shown during registration to indicate an empty field. Argument is a field name-->
+  <string name="error_enter_field">Vennligst legg inn ditt %1$s.</string>
+  <!--Error prompt shown during registration to indicate a field missing a selection. Argument is a field name-->
+  <string name="error_select_field">Vennligst velg ditt %1$s.</string>
+  <!--Error prompt shown during registration when a field entry is too short. Arguments are 1) a field name, 2) a number-->
+  <string name="error_min_length">%1$s må ha minst %2$d tegn.</string>
+  <!--Error prompt shown during registration when a field entry is too long. Arguments are 1) a field name, 2) a number-->
+  <string name="error_max_length">%1$s kan ikke ha flere enn %2$d tegn.</string>
+  <!--Error message shown when a course hasn't started yet-->
+  <!--Error message shown when a user can't perform an action on e.g. add a post/response/comment in forums-->
+</resources>

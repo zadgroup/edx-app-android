@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--An error occurred but we don't know why-->
+  <string name="error_unknown">Error desconocido. Por favor intentelo más tarde.</string>
+  <!--Network error messages-->
+  <!--Error shown when  user attempts an action but needs an internet connection-->
+  <string name="network_not_connected">No estás conectado a internet.</string>
+  <!--Concise error shown when user attempts an action but needs an internet connection-->
+  <string name="network_not_connected_short">Red no alcanzable</string>
+  <!--Alert dialog title shown when a network request fails-->
+  <string name="reset_no_network_title">Error de conexión</string>
+  <!--Alert dialog content shown when a network request fails because the user has no internet connection-->
+  <string name="reset_no_network_message">No estás conectado a internet. Por favor, comprobá tu conexión a internet.</string>
+  <!--An error ocurred due to some kind of network failure-->
+  <string name="network_connected_error">Error de conección. Por favor revise su conección a internet.</string>
+  <!--Title of prompt indicating issue loading a video-->
+  <string name="network_error_header">Problema al cargar video</string>
+  <!--Content of prompt indicating issue loading a video-->
+  <string name="network_error_message">Por favor, comprobá tu conexión a internet.</string>
+  <!--The server we are trying to use is not available right now-->
+  <string name="network_service_unavailable">EL servicio no esta disponible. Intentelo de nuevo más tarde.</string>
+  <!--Login error messages-->
+  <!--Error shown during login when user attempts login without entering a username or e-mail-->
+  <string name="error_enter_email">Por favor, ingresá tu nombre de usuario o correo electrónico y volvé a intentarlo.</string>
+  <!--Error shown during login when user enters an invalid email address-->
+  <string name="error_invalid_email">Por favor, comprobá que tu correo electrónico tenga el formato correcto y volvé a intentarlo.</string>
+  <!--Error shown during login when user attempts login without entering a password-->
+  <string name="error_enter_password">Por favor, ingresá tu contraseña y volvé a intentarlo.</string>
+  <!--Title of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <string name="error_account_not_linked_title_fb">Su cuenta de Facebook no está asociada con su cuenta de  {platform_name} </string>
+  <!--Content of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <string name="error_account_not_linked_desc_fb">Asegurese de que su cuenta de Facebook está asociada con su cuenta de {platform_name} en {platform_destination}</string>
+  <!--Title of alert shown during login when user attempts login via Google without having linked their account-->
+  <string name="error_account_not_linked_title_google">Su cuenta de Google no está asociada con su cuenta de {platform_name}</string>
+  <!--Content of alert shown during login when user attempts login via Google without having linked their account-->
+  <string name="error_account_not_linked_desc_google">Asegurese de que su cuenta de Google esté asociada con su cuenta de {platform_name} en {platform_destination}</string>
+  <!--Download error messages-->
+  <!--Label shown on video list item whose download failed-->
+  <string name="error_download_failed">No se pudo realizar la descarga</string>
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <string name="file_size_exceeded">El tamaño de la descarga excede el espacio de almacenamiento restante del dispositivo.</string>
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <string name="download_exceed_message">Los vídeos que seleccionó pesan más de 1 GB. 
+    ¿Quiere descargar estos vídeos?</string>
+  <!--Message shown when user attempts to download a video over cellular data,
+    but has chosen to only allow video downloads over wifi-->
+  <!--Offline Access-->
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <string name="section_offline_header">Esta sección no esta disponible en modo sin conexión</string>
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <!--Alert dialog title shown when user attempts to view a video that hasn't been synced-->
+  <string name="video_offline_header">Este video no esta disponible sin conexión.</string>
+  <!--Alert dialog content shown when user attempts to view a video that hasn't been synced-->
+  <string name="video_offline_message">Por favor seleccione un video que haya descargado a su dispositivo</string>
+  <!--New version available-->
+  <!--Snackbar notification shown when the current version of the app is unsupported-->
+  <string name="app_version_unsupported">Su version de la app ya no está soportada.</string>
+  <!--Snackbar notification shown when the current version of the app is deprecated-->
+  <!--Snackbar notification shown when the current version of the app is outdated-->
+  <string name="app_version_outdated">Una nueva versión de la app está disponible.</string>
+  <!--Snackbar action button label for opening an app store to upgrade the app to the latest version-->
+  <string name="app_version_update_button">Actualizar</string>
+  <!--Toast notification for when the user presses the update action button from the Snackbar
+         notifications while no supported app store or browser is installed on the device with which
+         the app could be updated-->
+  <!--Registration Error Messages-->
+  <!--Error prompt shown during registration to indicate an empty field. Argument is a field name-->
+  <string name="error_enter_field">Ingrese su %1$s.</string>
+  <!--Error prompt shown during registration to indicate a field missing a selection. Argument is a field name-->
+  <string name="error_select_field">Seleccione su  %1$s.</string>
+  <!--Error prompt shown during registration when a field entry is too short. Arguments are 1) a field name, 2) a number-->
+  <string name="error_min_length">%1$s debe tener al menos %2$d caracteres.</string>
+  <!--Error prompt shown during registration when a field entry is too long. Arguments are 1) a field name, 2) a number-->
+  <string name="error_max_length">%1$s no puede tener más de %2$d caracteres.</string>
+  <!--Error message shown when a course hasn't started yet-->
+  <string name="course_not_started">Este curso aun no ha comenzado.</string>
+  <!--Error message shown when a user can't perform an action on e.g. add a post/response/comment in forums-->
+  <string name="action_not_completed">No se pudo completar la acción. </string>
+</resources>

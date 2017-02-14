@@ -321,8 +321,8 @@ android {
             resources.srcDirs = ['src/main/java']
             aidl.srcDirs = ['src/main/java']
             renderscript.srcDirs = ['src/main/java']
-            res.srcDirs = ['res']
-            assets.srcDirs = ['assets']
+            res.srcDirs = ['zadires']
+            assets.srcDirs = ['zadiassets']
         }
 
         // Move the build types to build-types/<type>

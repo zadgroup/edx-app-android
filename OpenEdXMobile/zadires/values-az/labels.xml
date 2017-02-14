@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Divider between current time and total time. For example  "2:33/5:10"-->
+  <!--Name of mode when user has no internet connection causing some features to be unavailable-->
+  <!--Label describing the meaning of offline mode-->
+  <!--Button allowing user to open a web page corresponding to the current screen in a web browser-->
+  <!--Label indicating that the only course content visible in the app is videos-->
+  <!--Dialog Fragment Labels-->
+  <!--Alert dialog cancel button-->
+  <!--Alert dialog No button-->
+  <!--Alert dialog download button-->
+  <!--Alert dialog yes confirmation button-->
+  <!--Alert dialog delete confirmation button-->
+  <!--Alert dialog edit list confirmation button-->
+  <!--Alert dialog okay button-->
+  <!--Alert dialog close button-->
+  <!--Alert dialog continue confirmation button-->
+</resources>

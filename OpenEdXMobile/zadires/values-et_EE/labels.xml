@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Divider between current time and total time. For example  "2:33/5:10"-->
+  <string name="lbl_slash">/</string>
+  <!--Name of mode when user has no internet connection causing some features to be unavailable-->
+  <string name="lbl_offline_mode">Võrguta režiim</string>
+  <!--Label describing the meaning of offline mode-->
+  <string name="lbl_offline_mode_desc">Võrguta režiimis saad vaadata ainult videoid, mis on salvestatud sinu seadmesse.</string>
+  <!--Button allowing user to open a web page corresponding to the current screen in a web browser-->
+  <string name="lbl_view_on_web">VAATA VEEBIS</string>
+  <!--Label indicating that the only course content visible in the app is videos-->
+  <string name="lbl_showing_only_videos">Näidatakse vaid videoid</string>
+  <!--Dialog Fragment Labels-->
+  <!--Alert dialog cancel button-->
+  <string name="label_cancel">Katkesta</string>
+  <!--Alert dialog No button-->
+  <string name="label_no">Ei</string>
+  <!--Alert dialog download button-->
+  <string name="label_download">Laadi alla</string>
+  <!--Alert dialog yes confirmation button-->
+  <string name="label_yes">Jah</string>
+  <!--Alert dialog delete confirmation button-->
+  <string name="label_delete">Kustuta</string>
+  <!--Alert dialog edit list confirmation button-->
+  <string name="label_edit">Muuda</string>
+  <!--Alert dialog okay button-->
+  <string name="label_ok">OK</string>
+  <!--Alert dialog close button-->
+  <string name="label_close">Sulge</string>
+  <!--Alert dialog continue confirmation button-->
+  <string name="label_continue">Jätka</string>
+</resources>

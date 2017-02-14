@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Divider between current time and total time. For example  "2:33/5:10"-->
+  <!--Name of mode when user has no internet connection causing some features to be unavailable-->
+  <string name="lbl_offline_mode">Tryb offline</string>
+  <!--Label describing the meaning of offline mode-->
+  <string name="lbl_offline_mode_desc">W trybie offline możesz oglądać tylko te filmy, które zostały zapisane na urządzeniu.</string>
+  <!--Button allowing user to open a web page corresponding to the current screen in a web browser-->
+  <!--Label indicating that the only course content visible in the app is videos-->
+  <!--Dialog Fragment Labels-->
+  <!--Alert dialog cancel button-->
+  <string name="label_cancel">Anuluj</string>
+  <!--Alert dialog No button-->
+  <string name="label_no">Nie</string>
+  <!--Alert dialog download button-->
+  <string name="label_download">Pobierz</string>
+  <!--Alert dialog yes confirmation button-->
+  <string name="label_yes">Tak</string>
+  <!--Alert dialog delete confirmation button-->
+  <string name="label_delete">Usuń</string>
+  <!--Alert dialog edit list confirmation button-->
+  <string name="label_edit">Edytuj</string>
+  <!--Alert dialog okay button-->
+  <string name="label_ok">OK</string>
+  <!--Alert dialog close button-->
+  <string name="label_close">Zamknij</string>
+  <!--Alert dialog continue confirmation button-->
+  <string name="label_continue">Kontynuuj</string>
+</resources>

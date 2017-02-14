@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--An error occurred but we don't know why-->
+  <string name="error_unknown">Неизвестная ошибка. Пожалуйста, попробуйте еще раз.</string>
+  <!--Network error messages-->
+  <!--Error shown when  user attempts an action but needs an internet connection-->
+  <string name="network_not_connected">Вы не подключены к Интернету.</string>
+  <!--Concise error shown when user attempts an action but needs an internet connection-->
+  <string name="network_not_connected_short">Сеть недоступна.</string>
+  <!--Alert dialog title shown when a network request fails-->
+  <string name="reset_no_network_title">Ошибка соединения</string>
+  <!--Alert dialog content shown when a network request fails because the user has no internet connection-->
+  <string name="reset_no_network_message">Вы не подключены к интернету. Пожалуйста, проверьте Ваше интернет-соединение.</string>
+  <!--An error ocurred due to some kind of network failure-->
+  <string name="network_connected_error">Ошибка подключения. Пожалуйста, проверьте свое подключение к интернету.</string>
+  <!--Title of prompt indicating issue loading a video-->
+  <string name="network_error_header">Проблема при загрузке видео</string>
+  <!--Content of prompt indicating issue loading a video-->
+  <string name="network_error_message">Проверьте Ваше интернет-соединение.</string>
+  <!--The server we are trying to use is not available right now-->
+  <string name="network_service_unavailable">Сервис недоступен. Пожалуйста, попробуйте еще раз попозже.</string>
+  <!--Login error messages-->
+  <!--Error shown during login when user attempts login without entering a username or e-mail-->
+  <string name="error_enter_email">Введите имя пользователя или адрес электронной почты и повторите попытку.</string>
+  <!--Error shown during login when user enters an invalid email address-->
+  <string name="error_invalid_email">Проверте правильность написания электронного адреса и повторите попытку.</string>
+  <!--Error shown during login when user attempts login without entering a password-->
+  <string name="error_enter_password">Введите пароль и повторите попытку.</string>
+  <!--Title of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <string name="error_account_not_linked_title_fb">Аккаунт Facebook не привязан у учетной записи {platform_name}</string>
+  <!--Content of alert shown during login when user attempts login via Facebook without having linked their account-->
+  <string name="error_account_not_linked_desc_fb">Убедитесь, что Ваш аккаунт Facebook привязан к учетной записи {platform_name} на {platform_destination}</string>
+  <!--Title of alert shown during login when user attempts login via Google without having linked their account-->
+  <string name="error_account_not_linked_title_google">Аккаунт Google не привязан у учетной записи {platform_name}</string>
+  <!--Content of alert shown during login when user attempts login via Google without having linked their account-->
+  <string name="error_account_not_linked_desc_google">Убедитесь, что Ваш аккаунт Google привязан к учетной записи {platform_name} на {platform_destination}</string>
+  <!--Download error messages-->
+  <!--Label shown on video list item whose download failed-->
+  <string name="error_download_failed"> Ошибка скачивания</string>
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <string name="file_size_exceeded">Размер скачиваемого файла превышает доступное дисковое пространство.</string>
+  <!--Confirmation message shown when attempting to download a large quantity of video data-->
+  <string name="download_exceed_message">Видео, которые Вы выбрали, занимают более 1 ГБ.
+Вы хотите скачать эти видео?</string>
+  <!--Message shown when user attempts to download a video over cellular data,
+    but has chosen to only allow video downloads over wifi-->
+  <string name="wifi_off_message">Ваши настройки позволяют скачивание лишь по Wi-Fi. 
+\n Подключитесь к сети Wi-Fi или измените настройки загрузки.</string>
+  <!--Offline Access-->
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <string name="section_offline_header">Этот раздел недоступен в режиме оффлайн</string>
+  <!--Label shown when user attempts to view a course section that hasn't been synced-->
+  <string name="section_offline_message">Если Вы скачали файлы для другого раздела, 
+\n перейдите в этот раздел для их просмотра.</string>
+  <!--Alert dialog title shown when user attempts to view a video that hasn't been synced-->
+  <string name="video_offline_header">Это видео недоступно в режиме оффлайн.</string>
+  <!--Alert dialog content shown when user attempts to view a video that hasn't been synced-->
+  <string name="video_offline_message">Пожалуйста, выберите видео, которые Вы сгрузили на свое устройство.</string>
+  <!--New version available-->
+  <!--Snackbar notification shown when the current version of the app is unsupported-->
+  <string name="app_version_unsupported">Приложение вашей версии больше не поддерживается</string>
+  <!--Snackbar notification shown when the current version of the app is deprecated-->
+  <!--Snackbar notification shown when the current version of the app is outdated-->
+  <string name="app_version_outdated">Доступна новая версия приложения.</string>
+  <!--Snackbar action button label for opening an app store to upgrade the app to the latest version-->
+  <string name="app_version_update_button">Обновить</string>
+  <!--Toast notification for when the user presses the update action button from the Snackbar
+         notifications while no supported app store or browser is installed on the device with which
+         the app could be updated-->
+  <string name="app_version_upgrade_app_store_unavailable">На устройстве не найден поддерживаемый магазин приложений.</string>
+  <!--Registration Error Messages-->
+  <!--Error prompt shown during registration to indicate an empty field. Argument is a field name-->
+  <string name="error_enter_field">Введите %1$s.</string>
+  <!--Error prompt shown during registration to indicate a field missing a selection. Argument is a field name-->
+  <string name="error_select_field">Выберите %1$s.</string>
+  <!--Error prompt shown during registration when a field entry is too short. Arguments are 1) a field name, 2) a number-->
+  <string name="error_min_length">%1$s должен содержать не менее %2$d символов.</string>
+  <!--Error prompt shown during registration when a field entry is too long. Arguments are 1) a field name, 2) a number-->
+  <string name="error_max_length">%1$s не может содержать более %2$d символов.</string>
+  <!--Error message shown when a course hasn't started yet-->
+  <string name="course_not_started">Этот курс еще не начался.</string>
+  <!--Error message shown when a user can't perform an action on e.g. add a post/response/comment in forums-->
+  <string name="action_not_completed">Это действие не может быть выполнено.</string>
+</resources>

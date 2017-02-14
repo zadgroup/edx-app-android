@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Certificates-->
+  <!--Label congratulation user on finishing course-->
+  <string name="course_details_congratulations">Поздравляем!</string>
+  <!--Message for user who has successfully completed a certificate course-->
+  <string name="course_details_earned_cert">Вы прошли курс.</string>
+  <!--Button that opens a full view of an earned certificate-->
+  <string name="course_details_view_cert_button">Показать сертификат</string>
+  <!--Course Discovery-->
+  <!--Enroll Now button text-->
+  <string name="enroll_now_button_text">Зарегистрироваться сейчас</string>
+  <!--Effort field name-->
+  <string name="effort_field_name">Попыток:</string>
+  <!--When discovering courses, some courses have an externally hosted video that describes it.
+    In that case, a play icon is shown on top of the course image. This is the content description.-->
+  <string name="go_to_video">Перейти к видео</string>
+  <!--View Course button text text-->
+  <string name="view_course_button_text">Посмотреть курс</string>
+  <!--Floating overlay text shown to user when they succeed at enrolling in a course-->
+  <string name="you_are_now_enrolled">Теперь вы записаны на этот курс</string>
+  <!--Error message shown when dashboard cannot be shown from course detail view-->
+  <string name="cannot_show_dashboard">Невозможно показать панель инструментов.</string>
+  <!--Course Sharing-->
+  <!--Description of button that will open the share course menu-->
+  <string name="share_course_button">Поделиться курсом</string>
+  <!--Share menu title-->
+  <string name="share_course_popup_header">Поделиться курсом через...</string>
+  <!--Share course-->
+  <string name="share_course_message">Я изучаю курс на {platform_name}! Посмотрите:</string>
+  <!--Settings Page-->
+  <!--Label for wifi only switch-->
+  <string name="settings_wifi_top">Скачивание только через Wi-Fi соединение</string>
+  <!--Label explaining what wifi only means in detail-->
+  <string name="settings_wifi_bottom">Скачивать файлы только при включенном Wi-Fi соединении</string>
+  <!--Certificate Page-->
+  <!--Description of button that will open the certificate sharing menu-->
+  <string name="share_certificate_button">Поделиться сертификатом</string>
+  <!--Text that pre-populates your post/email/SMS when sharing certificate-->
+  <string name="share_certificate_message">Я только что получил(а) сертификат на {platform_name}! Посмотреть: {certificate_url}</string>
+  <!--Tab of tab for certicate for finished course-->
+  <string name="tab_label_certificate">Сертификат</string>
+  <!--Header for popup list of share targets-->
+  <string name="share_certificate_popup_header">Поделиться сертификатом через...</string>
+  <!--Data Usage Dialog-->
+  <!--Alert dialog error message shown when using a feature with a required Internet connection-->
+  <string name="need_data">Эта функция требует подключения к Интернету.</string>
+  <!--Login Activity Place Holders-->
+  <!--Hint text for login field-->
+  <string name="email_username">Логин или E-mail адрес</string>
+  <!--Hint text for email address field in reset password dialog-->
+  <string name="email">E-mail адрес</string>
+  <!--Hint text for password field-->
+  <string name="password">Пароль</string>
+  <!--Button text allowing user to reset their password-->
+  <string name="forgot_password">Забыли пароль?</string>
+  <!--Button initiating login process after user enters credentials like username and password-->
+  <string name="login">Войти</string>
+  <!--Accessible content description of sign in button on Log in screen-->
+  <string name="login_btn">Кнопка входа в систему</string>
+  <!--Message shown while waiting for action-->
+  <string name="progress_text">Пожалуйста, подождите</string>
+  <!--Message shown while user waits for response to a sign in request-->
+  <string name="signing_in">Вход в систему</string>
+  <!--Message for shown after tapping Sign In-->
+  <string name="error_message">Сообщение об ошибке</string>
+  <!--Generic error during log in-->
+  <string name="error_heading">Следующая ошибка произошла во время входа</string>
+  <!--Error during log in.-->
+  <string name="login_failed">Убедитесь в правильности Вашего имени пользователя или адреса электронной почты и повторите попытку.</string>
+  <string name="by_signing_up">Подписываясь на это приложение, Вы даете согласие на...</string>
+  <string name="licensing_agreement">Условия предоставления услуг {platform_name} и Кодекс Чести</string>
+  <string name="login_title">Войти</string>
+  <!--Accessible content description of close button on Sign in and Sign up screen-->
+  <string name="close">Закрыть</string>
+  <!--Accessible content description prefix of dropdowns on Sign up screen, like, country and gender dropdowns-->
+  <string name="dropdown_list_prefix">Выпадающий список.</string>
+  <!--Navigation Drawer Labels-->
+  <!--The accessibility description for the navigation header-->
+  <string name="navigation_header">Вы вошли как {username}, {email}</string>
+  <!--Button to open drawer-->
+  <string name="label_open_navigation_menu">Открыть Навигационное Меню.</string>
+  <!--Button to open drawer-->
+  <string name="label_close_navigation_menu">Закрыть Навигационное Меню.</string>
+  <!--Button text to show user Settings screen-->
+  <string name="action_settings">Настройки</string>
+  <!--Content description for edit profile button-->
+  <string name="open_profile_button">Открыть ваш профиль</string>
+  <!--Title of user's course list screen-->
+  <string name="label_my_courses">Мои курсы</string>
+  <!--Title of user's downloaded videos list screen-->
+  <string name="label_my_videos">Мои видео</string>
+  <!--Title of Find Courses screen-->
+  <string name="label_find_courses">Искать курсы</string>
+  <!--Button allowing users to send an email for feedback-->
+  <string name="label_submit_feedback">Отправить отзыв</string>
+  <!--Toggle switch on state label-->
+  <string name="toggle_turn_on">Вкл.</string>
+  <!--Toggle switch off state label-->
+  <string name="toggle_turn_off">Выкл.</string>
+  <!--Logout button label-->
+  <string name="logout">Выйти</string>
+  <!--Settings screen title-->
+  <string name="settings_txt">Настройки</string>
+  <!--Settings screen version-->
+  <string name="label_version">Версия приложения</string>
+  <!--Button text to show user Settings screen-->
+  <string name="label_settings">Мои настройки</string>
+  <!--Help Dialog Place Holder messages-->
+  <!--Reset password alert dialog title-->
+  <string name="confirm_dialog_title_help">Восстановление пароля</string>
+  <!--Reset password alert dialog message-->
+  <string name="success_dialog_title_help">Сообщение для восстановления пароля отправлено на E-mail адрес</string>
+  <!--Reset password alert dialog title-->
+  <string name="title_reset_password_failed">Ошибка восстановления пароля</string>
+  <!--Label for switch controlling whether users permit downloading using cellular data or only wifi-->
+  <string name="wifi_dialog_title_help">Разрешить скачивание через мобильное соединение</string>
+  <!--Password reset sent succesfully alert-->
+  <string name="success_dialog_message_help">Инструкции по восстановлению пароля отправлены на Ваш e-mail адрес.
+Если сообщение не придет через несколько минут, проверьте папку со спамом.</string>
+  <!--Password reset dialog prompt-->
+  <string name="confirm_dialog_message_help">Введите Ваш адрес электронной почты, и мы отправим на него инструкции по восстановлению пароля.</string>
+  <!--Label explaining toggle for cellular data access-->
+  <string name="wifi_dialog_message_help">Разрешить устройству скачивать видео через мобильное соединение, когда Wi-Fi соединение недоступно. Может взиматься дополнительная плата за передачу данных.</string>
+  <!--Confirmation text for delete video dialog-->
+  <string name="delete_dialog_title_help">Подтвердить удаление</string>
+  <plurals name="delete_video_dialog_msg">
+    <item quantity="one">Вы уверены, что хотите удалить эти видео?</item>
+    <item quantity="few">Вы уверены, что хотите удалить эти видео?</item>
+    <item quantity="many">Вы уверены, что хотите удалить эти видео?</item>
+    <item quantity="other">Вы уверены, что хотите удалить эти видео?</item>
+  </plurals>
+  <!--Alert dialog title for users with zero rated data-->
+  <string name="leaving_app_data_title">Выход из приложения {platform_name} </string>
+  <!--Alert dialog content for users with zero rated data-->
+  <string name="leaving_app_data_message">Покидая это приложение, Вы больше не сможете просмотреть бесплатный контент {platform_name}. Может взиматься дополнительная плата за передачу данных.</string>
+  <!--Title of agreement users must accept to use the app-->
+  <string name="end_user_title">Лицензионное соглашение конечного пользователя</string>
+  <!--My Courses-->
+  <!--Row of course on dashboard screen-->
+  <!--Row of course on dashboard screen-->
+  <!--NOTE: TODO - not final one-->
+  <string name="courseware_subtitle">Доступ к видео и заданиям</string>
+  <!--Row of Discussion on dashboard screen-->
+  <string name="discussion_title">Обсуждение</string>
+  <!--Row of Discussion on dashboard screen-->
+  <!--NOTE: TODO - not final one-->
+  <string name="discussion_subtitle">Присоединиться к обсуждению</string>
+  <!--Row of Handouts on dashboard screen-->
+  <string name="handouts_title">Дополнительные материалы</string>
+  <!--Row of Handouts on dashboard screen-->
+  <!--NOTE: TODO - not final one-->
+  <string name="handouts_subtitle">Найти важную информацию о курсе</string>
+  <!--Row of announcement on dashboard screen-->
+  <string name="announcement_title">Объявления</string>
+  <!--Row of announcement on dashboard screen-->
+  <!--NOTE: TODO - not final one-->
+  <string name="announcement_subtitle">Будьте в курсе последних новостей</string>
+  <!--Accessible content description of school code label a course-->
+  <string name="school_code">Кодекс Школы</string>
+  <!--Accessible content description of course name label field-->
+  <string name="course_name">Название курса</string>
+  <!--Label indicating new course content has been downloaded-->
+  <string name="new_course_content">Новый контент курса</string>
+  <!--Label for date when course starts-->
+  <string name="label_starting">Начало - {date}</string>
+  <!--Label for course that has ended-->
+  <string name="label_ended">Окончен - {date}</string>
+  <!--Label for date when course is ending-->
+  <string name="label_ending">Дата окончания - {date}</string>
+  <!--Course Details-->
+  <!--Accessible content description of label for course content-->
+  <string name="course_content">Содержание курса</string>
+  <!--Tab title for course handouts section-->
+  <string name="tab_label_handouts">Дополнительные материалы</string>
+  <!--Button for last accessed course section. Will be followed by course name-->
+  <string name="last_accessed">Последнее посещение</string>
+  <!--Label shown when no courseware content is available-->
+  <!--Label shown when user is enrolled in no courses-->
+  <string name="no_courses_to_display">Похоже, Вы еще не записались ни на один курс.</string>
+  <!--Label shown when no announcements are available for a course-->
+  <string name="no_announcements_to_display">На данный момент на этом курсе нет объявлений.</string>
+  <!--Label shown when no handouts are available for a course-->
+  <string name="no_handouts_to_display">В этом курсе нет дополнительных материалов.</string>
+  <!--Discussion Topics-->
+  <!--Label for the discussion topics page-->
+  <string name="discussion_topics_title">Темы обсуждений</string>
+  <!--Hint displayed in search view for discussion posts-->
+  <string name="topics_search">Поиск по всем записям</string>
+  <!--Discussion Posts Fragment-->
+  <!--Title for discussion post search results-->
+  <string name="discussion_posts_search_title">Результаты поиска</string>
+  <!--Label for the the filter and sort options for refining the thread list-->
+  <string name="discussion_posts_refine">Улучшить:</string>
+  <!--Label for creating a new post-->
+  <string name="discussion_post_create_new_post">Создать новую запись</string>
+  <!--Label for creating a new comment-->
+  <!--Discussion posts filter options-->
+  <!--Discussion posts filter for all posts-->
+  <string name="discussion_posts_filter_all_posts">Все записи</string>
+  <!--Discussion posts filter for unread posts-->
+  <string name="discussion_posts_filter_unread_posts">Непрочитанные</string>
+  <!--Discussion posts filter for unanswered posts-->
+  <string name="discussion_posts_filter_unanswered_posts">Неотвечено</string>
+  <!--Discussion posts sort options-->
+  <!--Discussion posts sort by recent activity-->
+  <string name="discussion_posts_sort_recent_activity">Недавняя активность</string>
+  <!--Discussion posts sort by most activity-->
+  <string name="discussion_posts_sort_most_activity">Наибольшая Активность</string>
+  <!--Discussion posts sort by most votes-->
+  <string name="discussion_posts_sort_most_votes">Популярные</string>
+  <!--Label for the visibility of a discussion post that is only visible to cohort-->
+  <string name="discussion_post_visibility_cohort">Эта запись доступна для просмотра только {cohort}.</string>
+  <!--Label for the visibility of a discussion post that is visible to everyone-->
+  <string name="discussion_post_visibility_everyone">Эта запись доступна для просмотра всем.</string>
+  <!--Used while constructing the author attribution text for a discussion post e.g. "3 days ago by Brian (Staff)"-->
+  <string name="discussion_post_author_attribution">автор {author}</string>
+  <!--Used while constructing the author attribution text for an answer response e.g. "Marked as answer 2 days ago by Khalid (Community TA)"-->
+  <string name="discussion_post_marked_as_answer">Отмечено как ответ</string>
+  <!--Used while constructing the author attribution text for an endorsed response e.g. "Endorsed 2 days ago by Khalid"-->
+  <string name="discussion_post_endorsed">Одобрено</string>
+  <!--Used for putting authorLabel into parenthesis e.g. (Community TA) or (Staff)-->
+  <string name="discussion_post_author_label_attribution">({text})</string>
+  <!--Label indicating the number of replies on a post e.g. 47 total-->
+  <string name="discussion_post_total_replies">{total_replies} Всего</string>
+  <!--Label indicating the last time a post was updated e.g. Last post: Jun 22, 2016-->
+  <string name="discussion_post_last_interaction_date">Последнее сообщение: {date}</string>
+  <!--Discussion Responses-->
+  <!--Label for question type discussions that are answered-->
+  <string name="course_discussion_answered_title">Отвеченный вопрос</string>
+  <!--Label for question type discussions that are unanswered-->
+  <string name="course_discussion_unanswered_title">Неотвеченный вопрос</string>
+  <!--Label for adding a discussion response-->
+  <!--Label for number of discussion responses-->
+  <plurals name="number_responses_or_comments_responses_label">
+    <item quantity="one">%s ответ</item>
+    <item quantity="few">%s ответа</item>
+    <item quantity="many">%s ответов</item>
+    <item quantity="other">%s ответов</item>
+  </plurals>
+  <!--Label for number of discussion comments-->
+  <plurals name="number_responses_or_comments_comments_label">
+    <item quantity="one">%s комментарий</item>
+    <item quantity="few">%s комментария</item>
+    <item quantity="many">%s комментариев</item>
+    <item quantity="other">%s комментариев</item>
+  </plurals>
+  <!--Label for adding a new comment-->
+  <!--Label for indicating that a response is an answer-->
+  <string name="discussion_responses_answer">Ответ</string>
+  <!--Label for indicating that a response is endorsed-->
+  <string name="discussion_responses_endorsed">Одобрено</string>
+  <!--Label for time span when its less than a second after posting a response/comment-->
+  <string name="just_now">Только что</string>
+  <!--Label for letting the user know his/her response was successfully added-->
+  <string name="discussion_response_posted">Ваш ответ добавлен.</string>
+  <!--Label for letting the user know his/her comment was successfully added-->
+  <string name="discussion_comment_posted">Ваш комментарий добавлен.</string>
+  <!--Discussion Responses Action Bar-->
+  <!--Label to indicate number of votes-->
+  <plurals name="discussion_responses_action_bar_vote_text">
+    <item quantity="one">{quantity} голос</item>
+    <item quantity="few">{quantity} голоса</item>
+    <item quantity="many">{quantity} голосов</item>
+    <item quantity="other">{quantity} голосов</item>
+  </plurals>
+  <!--Label to indicate discussion response is not marked as inappropriate-->
+  <string name="discussion_responses_report_label">Сообщить о нарушении</string>
+  <!--Label for discussion response that has been marked as inappropriate-->
+  <!--Title in adding a new comment-->
+  <string name="discussion_add_comment_title">Добавить комментарий</string>
+  <!--Title when adding a new comment is disabled-->
+  <string name="discussion_add_comment_disabled_title">Комментарии к этому ответу закрыты</string>
+  <!--Title in showing list of comments-->
+  <string name="discussion_comments">Комментарии</string>
+  <!--Add comment button title in adding a new comment-->
+  <string name="discussion_add_comment_button_label">Добавить комментарий</string>
+  <!--Add comment button description for accessibility in adding a new comment-->
+  <string name="discussion_add_comment_button_description">Кнопка добавления комментария</string>
+  <!--Add your comment placeholder in adding a new comment-->
+  <!--Title in adding a new response-->
+  <string name="discussion_add_response_title">Добавить ответ</string>
+  <!--Title when adding a new response is disabled-->
+  <string name="discussion_add_response_disabled_title">Ответы к этой записи недоступны</string>
+  <!--Add response button title in adding a new response-->
+  <string name="discussion_add_response_button_label">Добавить ответ</string>
+  <!--Add response button description for accessibility in adding a new response-->
+  <string name="discussion_add_response_button_description">Кнопка добавления комментария</string>
+  <!--Add your response placeholder in adding a new response-->
+  <!--Title placeholder in adding a new post-->
+  <string name="discussion_post_title">Заголовок</string>
+  <!--Label for selected topic when creating a post-->
+  <string name="discussion_add_post_topic_selection">Тема: {topic}</string>
+  <!--Add post button title in adding a new discussion-->
+  <string name="discussion_add_post_button_label">Опубликовать обсуждение</string>
+  <!--Add post button description for accessibility in adding a new discussion-->
+  <string name="discussion_add_post_button_description">Кнопка публикации обсуждения</string>
+  <!--Add post button title in adding a new post-->
+  <string name="discussion_add_question_button_label">Опубликовать вопрос</string>
+  <!--Add post button content description for accessibility in adding a new post-->
+  <string name="discussion_add_question_button_description">Кнопка публикации вопроса</string>
+  <!--Add your post placeholder in adding a new post-->
+  <!--Add your post placeholder in adding a new post-->
+  <!--Question text in adding a new post-->
+  <string name="discussion_question">Вопрос</string>
+  <!--Assessment-->
+  <!--Label showing next unit in a sub-section on assessment navigation bar-->
+  <string name="assessment_next">Далее</string>
+  <!--Label showing previous unit in a sub-section on assessment navigation bar-->
+  <string name="assessment_previous">Назад</string>
+  <!--Label showing assessment only available on website-->
+  <string name="assessment_not_available">Этот интерактивный компонент не доступен на мобильном устройстве.</string>
+  <!--Label showing assessment only available on website-->
+  <string name="assessment_explore_on_web">Посмотрите другие части этого курса или откройте его в веб-браузере.</string>
+  <!--Button to show wiew on web for assessment-->
+  <string name="assessment_view_on_web">Просмотреть в браузере</string>
+  <!--Label to show empty assessment-->
+  <string name="assessment_empty">К этому разделу нет учебного материала.</string>
+  <!--Label to show a course will be starting soon-->
+  <string name="assessment_soon">Скоро</string>
+  <!--Label to notify user to rotate device for viewing a video in full screen-->
+  <string name="assessment_rotate_for_fullscreen">Поверните устройство, чтобы открыть это видео в полноэкранном режиме.</string>
+  <!--Label showing only youtube is available-->
+  <string name="assessment_only_on_youtube">Это видео можно посмотреть только на YouTube.</string>
+  <!--Label for button to open on youtube-->
+  <string name="assessment_open_on_youtube">Посмотреть видео на YouTube.</string>
+  <!--Video List-->
+  <!--Label shown to indicate video currently downloading-->
+  <string name="started_downloading">Идет скачивание</string>
+  <!--Title of video download screen-->
+  <string name="title_download">Загрузки</string>
+  <!--MyVideos-->
+  <!--Title of all videos section-->
+  <string name="my_all_videos">Все видео</string>
+  <!--Title of recent videos section-->
+  <string name="my_recent_videos">Недавние видео</string>
+  <!--Label indicating user has no Internet connection-->
+  <string name="offline_text">Режим офлайн</string>
+  <!--Label shown in videos section when user has no videos downloaded-->
+  <string name="no_videos_to_display">Вы не скачали ни одного видео.</string>
+  <!--Cancel video download-->
+  <string name="cancel_download">Отмена загрузки</string>
+  <!--My Downloads-->
+  <!--Button action label to view an item-->
+  <string name="view_button_text">Просмотреть</string>
+  <!--Error text when downloading an item fails-->
+  <string name="download_failed_text">Скачать не удалось</string>
+  <!--Alert dialog title to confirm download of a large quantity of data-->
+  <string name="download_exceed_title">Крупная загрузка</string>
+  <!--Message shown a single video download begins-->
+  <string name="msg_started_one_video_download">Загружается 1 видео.</string>
+  <!--When a video download is about to start and we don't know it's file size yet-->
+  <string name="download_pending">Загрузка в состоянии ожидания...</string>
+  <!--Error shown when video download fails-->
+  <string name="msg_video_not_downloaded">Невозможно скачать видео.</string>
+  <!--Error shown when video download fails-->
+  <string name="msg_video_not_available">Это видео сейчас недоступно. \nПопробуйте позже.</string>
+  <!--Error shown when video has flag to indicate it is not available for mobile app-->
+  <string name="video_only_on_web_label">Это видео можно посмотреть только в браузере. Нажмите, чтобы посмотреть в браузере.</string>
+  <!--Message to indicate the it is not available for mobile app-->
+  <string name="video_only_on_web_short">Это видео пока еще не доступно на мобильном устройстве.</string>
+  <!--Alert dialog title when login fails-->
+  <string name="login_error">Ошибка входа</string>
+  <!--Alert dialog title when login fails due to lack of Internet-->
+  <string name="no_connectivity">Ошибка соединения</string>
+  <!--Wifi New Message-->
+  <!--Toggle to allow downloads using cellular data-->
+  <string name="allow">Разрешить</string>
+  <!--Toggle to disallow downloads using cellular data-->
+  <string name="do_not_allow">Не разрешать</string>
+  <!--Player Settings-->
+  <!--Label for closed captions in video player-->
+  <string name="lbl_closed_caption">Субтитры</string>
+  <!--Label for no closed captions selected-->
+  <string name="lbl_cc_cancel">Нет</string>
+  <!--Accessibility Label for Video Player-->
+  <string name="video_player">Видео Плеер</string>
+  <!--Accessibility Label for View on Web button on Video Player top bar-->
+  <string name="video_player_view_on_web">Просмотреть в браузере</string>
+  <!--Accessibility Label for Play button of Video Player-->
+  <string name="video_player_play">Воспроизвести</string>
+  <!--Accessibility Label for Pause button of Video Player-->
+  <string name="video_player_next">Далее</string>
+  <!--Accessibility Label for Previous button of Video Player-->
+  <string name="video_player_previous">Назад</string>
+  <!--Accessibility Label for Pause button of Video Player-->
+  <string name="video_player_pause">Пауза</string>
+  <!--Accessibility Label for Rewind button on Video Player bottom bar-->
+  <string name="video_player_rewind">Перемотать на 30 секунд.</string>
+  <!--Accessibility Label for Settings button on Video Player bottom bar-->
+  <string name="video_player_settings">Настройки</string>
+  <!--Accessibility Label for Entering Fullscreen button on Video Player bottom bar-->
+  <string name="video_player_enter_fullscreen">Войти в полноэкранный режим</string>
+  <!--Accessibility Label for Exiting Fullscreen button on Video Player bottom bar-->
+  <string name="video_player_exit_fullscreen">Покинуть полноэкранный режим</string>
+  <!--Button label to bring up course finder-->
+  <string name="find_course_text">Ищете что-то новое и интересное?</string>
+  <!--Button label to bring up course finder-->
+  <string name="find_course_btn_text">Найти курс, совместимый с мобильными устройствами</string>
+  <!--Message between sign in button and social login buttons-->
+  <string name="or_sign_in_with">Или войти с помощью</string>
+  <!--Facebook login method-->
+  <string name="facebook_text">Facebook</string>
+  <!--Google login method-->
+  <string name="google_text">Google</string>
+  <!--Message on course list-->
+  <string name="course_not_listed_text">Не видите какой-либо из Ваших курсов?</string>
+  <!--Accessible content description of course not listed button on Course list screen-->
+  <string name="course_not_listed_btn">Кнопка: \"Не видите какой-либо из Ваших курсов?\"</string>
+  <!--Title of find course screen-->
+  <string name="find_courses_title">Искать курсы</string>
+  <!--Message shown when attempting to find courses with no Internet connection-->
+  <string name="find_courses_offline_text">Вы в режиме оффлайн.\nЧтобы найти курсы, подключитесь к Интернету.</string>
+  <!--Prompt allowing user to choose email program-->
+  <string name="email_chooser_header">Отправить E-mail, используя...</string>
+  <!--Error shown when user attempts to send email, but has no email app-->
+  <string name="email_client_not_present">Нет установленных E-mail клиентов</string>
+  <!--Search for a course prompt-->
+  <string name="search_for_courses">Я хочу узнать о...</string>
+  <!--Landing Activity text-->
+  <!--Prompt leading user to sign in screen-->
+  <string name="already_have_an_account">Уже есть аккаунт? Войти</string>
+  <!--Prompt leading user to create account screen-->
+  <string name="sign_up_and_learn">Войти и начать обучение</string>
+  <!--In Register screen-->
+  <string name="register_with">Зарегистрироваться с помощью</string>
+  <string name="or_register_with_email">или зарегистрироваться с помощью E-mail адреса</string>
+  <!--New Logistration Launch screen text-->
+  <!--Button leading user to create account screen-->
+  <string name="launch_register">Регистрация</string>
+  <!--Button leading user to Find Courses screen from the launch screen-->
+  <string name="launch_discover_courses">Найти Курсы</string>
+  <!--Button leading user to Find Courses screen from the launch screen-->
+  <string name="launch_explore_subjects">Изучать Предметы</string>
+  <!--Registration Screen-->
+  <!--Create account agreement. Followed by list of agreement names like "End User License Agreement"-->
+  <string name="by_creating_account">Создавая аккаунт, Вы даёте согласие на</string>
+  <!--Button text allowing user to show hidden optional registration fields-->
+  <string name="show_optional_text">Показать необязательные поля</string>
+  <!--Button text allowing user to hide visible optional registration fields-->
+  <string name="hide_optional_text">Скрыть необязательные поля</string>
+  <!--Button text allowing user create an account-->
+  <string name="create_account_text">Создать аккаунт</string>
+  <!--Accessible content description of create account button on Registration screen-->
+  <string name="create_account_btn">Кнопка: \"Создать аккаунт\"</string>
+  <!--Text shown while waiting for registration request-->
+  <string name="creating_account_text">Создается аккаунт...</string>
+  <!--Registration screen title-->
+  <!--Text for successful registration with social token-->
+  <string name="sign_up_with_facebook_ok">Вы успешно вошли с помощью Facebook.</string>
+  <string name="sign_up_with_google_ok">Вы успешно вошли с помощью Google.</string>
+  <string name="sign_up_with_social_ok">Нам нужно еще немного информации, прежде чем Вы начнете обучение с {platform_name}.</string>
+  <!--Continue registration after social login-->
+  <string name="complete_registration">Завершите регистрацию</string>
+  <!--Message shown when enrolling in a course fails-->
+  <string name="enrollment_failure">Сейчас мы не можем записать Вас на этот курс.</string>
+  <!--Alert dialog button allowing user to repeat their attempted action-->
+  <string name="try_again">Попробовать еще раз</string>
+  <!--Registration error-->
+  <string name="registration_error_title">Ошибка Регистрации</string>
+  <string name="registration_error_message">Измените выделенные поля и попробуйте снова.</string>
+  <!--data charges may apply dialog text-->
+  <!--Alert dialog title shown for users whose in app data is zero rated, when they follow a link outside the app-->
+  <string name="open_external_url_title">Может взиматься дополнительная плата</string>
+  <!--Alert dialog content shown for users whose in app data is zero rated, when they follow a link outside the app-->
+  <string name="open_external_url_desc">Ссылка откроется в мобильном браузере. Может взиматься дополнительная плата за передачу данных.</string>
+  <string name="android">Android</string>
+  <!--Email subject line when user attempts to submit feedback about the app-->
+  <string name="email_subject">Отзывы клиентов</string>
+  <!--Submit Feedback app version text-->
+  <string name="app_version">Версия приложения:</string>
+  <!--Submit Feedback android version text-->
+  <string name="android_os_version">Android OS: </string>
+  <!--Submit Feedback android model text-->
+  <string name="android_device_model">Модель Устройства:</string>
+  <!--Submit Feedback feedback text-->
+  <string name="insert_feedback">Обратная Связь:</string>
+  <!--Message indicating num of video deleted. {video_count} is a number of videos deleted, like "3".-->
+  <plurals name="deleted_video">
+    <item quantity="one">{video_count} видео удалено</item>
+    <item quantity="few">{video_count} видео удалено</item>
+    <item quantity="many">{video_count} видео удалено</item>
+    <item quantity="other">{video_count} видео удалено</item>
+  </plurals>
+  <!--Notification related-->
+  <!--toggle between subscribe and unsubscribe to course announcement-->
+  <string name="notification_toggle">Разрешить уведомления</string>
+  <!--Placeholder title for course content with no title-->
+  <string name="untitled_block">Без заголовка</string>
+  <!--Discussion/Forum-->
+  <string name="forum_no_results_for_search_query">Не найдено результатов для \"{query_string}\". Попробуйте ввести другой запрос или выбрать, в какой категории обсуждений следует искать.</string>
+  <string name="forum_no_results_for_all_posts">В обсуждениях к этому курсу нет записей.</string>
+  <string name="forum_no_results_for_following">Вы не отслеживаете ни одной записи.</string>
+  <string name="forum_no_results_for_filtered_following">Результаты фильтра не включают в себя следующие записи.</string>
+  <string name="forum_no_results_in_category">В этой категории обсуждений нет записей.</string>
+  <string name="forum_no_results_with_filter">Попробуйте удалить фильтр записей.</string>
+  <string name="forum_post_i_am_following">Отслеживаемые Мною Записи</string>
+  <string name="forum_follow">Подписаться</string>
+  <string name="forum_unfollow">Отписаться</string>
+  <!--User Profiles-->
+  <!--Window title for the user profile screen-->
+  <string name="profile_title">Профиль</string>
+  <!--The accessibility description for the username section-->
+  <string name="profile_username_description">Имя Пользователя: {username}</string>
+  <!--The accessibility description for the language section-->
+  <string name="profile_language_description">Язык: {language}</string>
+  <!--The accessibility description for the location section-->
+  <string name="profile_location_description">Живет в: {location}</string>
+  <!--The accessibility description for the "About Me" section-->
+  <string name="profile_about_me_description">Обо Мне: {about_me}</string>
+  <!--Label for toolbar icon that launches the edit profile screen for the current user-->
+  <string name="profile_toolbar_edit_button">Редактировать</string>
+  <!--Shown when viewing your own profile and you are not sharing a full profile-->
+  <string name="profile_sharing_limited_by_you">Вы ограничили показ вашего профиля</string>
+  <!--Shown when viewing another user's profile and that user is not sharing a full profile-->
+  <string name="profile_sharing_limited_by_other_user">Этот пользователь ограничил показ своего профиля</string>
+  <!--Shown when viewing your own profile until you have confirmed you are over the age of consent (13 years old)-->
+  <string name="profile_consent_needed_explanation">Вы должны быть старше 13 лет, чтобы опубликовать полный профиль.</string>
+  <!--Shown as button below the explanation for age of consent; it launches the edit profile screen-->
+  <string name="profile_consent_needed_edit_button">Настройки Профиля</string>
+  <!--Shown when viewing your own incomplete profile-->
+  <string name="profile_incomplete_explanation">Похоже, что ваш профиль еще не заполнен. Давайте это сделаем.</string>
+  <!--Shown as button below the explanation for incomplete profile; it launches the edit profile screen-->
+  <string name="profile_incomplete_edit_button">Начать</string>
+  <!--This text is shown in place of the "About Me" text if the user has not filled in their "About Me"-->
+  <string name="profile_incomplete_about_me">Не предоставлено информации о себе.</string>
+  <!--Window title for edit profile screen-->
+  <string name="edit_user_profile_title">Редактировать профиль</string>
+  <!--How most profile fields are formatted when viewing the edit screen-->
+  <string name="edit_user_profile_field">{label}: {value}</string>
+  <!--Default placeholder if a profile field is blank-->
+  <string name="edit_user_profile_field_placeholder">Выбрать</string>
+  <!--Button that saves changes to a profile text field-->
+  <string name="edit_user_profile_textarea_submit_button">Отправить</string>
+  <!--An option that will set the user profile's primary language to the language of their device's configured locale-->
+  <string name="edit_user_profile_current_language">Установлен язык: {current_language}</string>
+  <!--An option that will set the user profile's location to the country of their device's configured locale-->
+  <string name="edit_user_profile_current_location">Текущее местоположение: {current_location}</string>
+  <!--Button label that will open gallery or camera for choosing new profile photo-->
+  <string name="edit_user_profile_change_photo">Изменить</string>
+  <!--Content Description for change photo button-->
+  <string name="edit_user_profile_change_photo_description">Изменить изображение профиля</string>
+  <!--Button that will open a camera for taking a new profile photo-->
+  <string name="edit_user_profile_take_photo">Сделать фотографию</string>
+  <!--Button that will open photo gallery for choosing a new profile photo-->
+  <string name="edit_user_profile_choose_photo">Выбрать фото</string>
+  <!--Button that will open a camera for taking a new profile photo-->
+  <string name="edit_user_profile_remove_photo">Удалить фото</string>
+  <!--Title when cropping newly selected profile photo-->
+  <string name="edit_user_profile_photo_crop_title">Обрезать и изменить размер</string>
+  <!--Button that will exit the crop tool without saving the image-->
+  <string name="edit_user_profile_photo_crop_cancel">Отмена</string>
+  <!--Button that will confirm the crop region and continue to upload the cropped photo-->
+  <string name="edit_user_profile_photo_crop_save">Выберите</string>
+  <!--Tab title for section of profile that displays a user's bio-->
+  <!--Tab title for section of profile that lists a user's accomplishments-->
+  <string name="profile_tab_accomplishment">Достижения</string>
+  <!--Button that will initiate sharing one of a user's accomplishments-->
+  <string name="share_accomplishment_button">Поделитесь своим достижением</string>
+  <!--Text that pre-populates your post/email/SMS when sharing certificate-->
+  <string name="share_accomplishment_message">Я только-что получил(а) на {platform_name}! Посмотреть: {badge_url}</string>
+</resources>
