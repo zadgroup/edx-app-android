@@ -3,3 +3,9 @@ ENVIRONMENT_DISPLAY_NAME: 'Localhost'
 PLATFORM_NAME: 'Zadi'
 PLATFORM_DESTINATION_NAME: 'mobile.zadinext.info/'
 FEEDBACK_EMAIL_ADDRESS: 'info@zadi.net'
+GOOGLE:
+    ENABLED : True
+    GOOGLE_PLUS_KEY: '128739054468-p30a55g3lupji3kdrfrf96oil4j35eql.apps.googleusercontent.com'
+FACEBOOK:
+    ENABLED : True
+    FACEBOOK_APP_ID : '339671493058324'
