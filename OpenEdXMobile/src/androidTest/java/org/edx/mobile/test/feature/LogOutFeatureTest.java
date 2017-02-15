@@ -2,7 +2,7 @@ package org.edx.mobile.test.feature;
 
 import org.edx.mobile.test.feature.data.TestValues;
 import org.edx.mobile.test.feature.interactor.AppInteractor;
-import org.junit.Test;
+//import org.junit.Test;
 
 public class LogOutFeatureTest extends FeatureTest {
 
